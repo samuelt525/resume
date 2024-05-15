@@ -1,6 +1,8 @@
 
 import heroImage from './images/hero.PNG'
-import ArrowDownTrayIcon from '@heroicons/react'
+import resume from './assets/resume.pdf'
+import {ArrowDownTrayIcon} from '@heroicons/react/24/outline'
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export const SectionId = {
     Hero: 'hero',
@@ -13,7 +15,6 @@ export const SectionId = {
     Testimonials: 'Testimonials'
 }
 
-
 export const heroData = {
     imageSrc: heroImage,
     name: "I'm Samuel Tsui",
@@ -24,10 +25,24 @@ export const heroData = {
         </p>
     ),
     actions: [{
-        href: '/resume/src/assets/resume.pdf',
+        href: resume,
         text: 'Resume',
         primary: true,
-        icon: ArrowDownTrayIcon,
+        Icon: ArrowDownTrayIcon,
+    },
+    {
+        href: 'Projects',
+        text: 'Projects'
+    },
+    {
+        href: 'Contacts',
+        text: 'Contacts'
     }]
-
 }
+
+
+export const socialData = [
+    {label: 'LinkedIn', Icon: FaLinkedin, href: 'https://www.linkedin.com/in/samuel-tsui-7730001b9/'},
+    {label: 'Github', Icon: FaGithub, href: 'https://github.com/samuelt525'},
+    {label: 'Instagram', Icon: FaInstagram, href: 'https://www.instagram.com/samuelt525/'},
+]

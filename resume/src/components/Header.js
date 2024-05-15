@@ -2,18 +2,12 @@ import React from 'react'
 import {Link, Element} from 'react-scroll'
 
 export default function Header(){
+    //'-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100';
     return ( 
-        <header className="header">
-            <nav className = "NavBar">
-                <ul>
-                    <li>
-                        <Link to="Hero" smooth={true} duration={500}>Hero</Link>
-                    </li>
-                    <li>
-                        <Link to="About" smooth={true} duration={500}> About </Link>
-                    </li>
-
-                </ul>
+        <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block">
+            <nav className="flex justify-center gap-x-8 flex-column p-x-2 m-x-2 content-between">
+                <Link to="About" offset={-64} smooth={true} className="font-bold text-2xl text-neutral-100 "> About </Link>
+                <Link to="Contact" offset={-64} smooth={true}> Contacts </Link>
             </nav>
         </header>
     )

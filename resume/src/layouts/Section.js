@@ -1,15 +1,16 @@
-import React, {memo, PropsWithChildren} from 'react'
+import React from 'react'
 import { SectionId } from '../data'
 import {Element} from 'react-scroll'
 
-const Section = memo(({children, sectionId, sectionTitle, noPadding = false, className}) => {
+export default function Section({children, sectionId, sectionTitle, noPadding = false, className})
+{
+    Section.displayName = 'Section'
     return (
         <Element name={sectionId}>
-            <div>{children}</div>
+            <div>{children}asdfadsfds</div>
         </Element>
     )
-});
+};
 
-Section.displayName = 'Section'
-export default Section;
+
 
