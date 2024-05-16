@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import classNames from 'classnames'
 import {heroData, SectionId} from '../data'
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
@@ -14,7 +14,7 @@ export default function Hero(){
     return (
         <Section sectionId={SectionId.Hero}>
             <div className="relative flex h-screen w-full items-center justify-center flex-row">
-
+                <img src={background} className="absolute z-0 h-full w-full object-cover" />
                 <div className="flex flex-col items-center shadow-xl backdrop-blur-sm">
                     <h1 className="text-4xl font-bold text-cyan-950 sm:text-5xl lg:text-7xl"> {name} </h1>
                     <p> {description} </p>
