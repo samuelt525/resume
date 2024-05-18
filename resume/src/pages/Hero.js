@@ -1,6 +1,6 @@
 import React, {memo} from 'react'
 import classNames from 'classnames'
-import {heroData, SectionId} from '../data'
+import {HeroData, SectionId} from '../data'
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import Section from '../layouts/Section';
 import Social from '../components/Social';
@@ -9,10 +9,10 @@ import {Link} from 'react-scroll'
 import background from '../images/924472.jpeg'
 
 export default function Hero(){ 
-    const {imageSrc, name, description, actions} = heroData;
+    const {imageSrc, name, description, actions} = HeroData;
     Hero.displayName = "Hero"
     return (
-        <Section sectionId={SectionId.Hero}>
+        <Section sectionId={SectionId.Hero} noPadding={true}>
             <div className="relative flex h-screen w-full items-center justify-center flex-row">
                 <img src={background} className="absolute z-0 h-full w-full object-cover" />
                 <div className="flex flex-col items-center shadow-xl backdrop-blur-sm">

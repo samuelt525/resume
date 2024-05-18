@@ -1,31 +1,39 @@
 import React from 'react'
 import {Element} from 'react-scroll'
 import Section from '../layouts/Section'
+import { aboutData } from '../data'
+import classNames from 'classnames'
+
 export default function About() {
+  const {profileImageSrc, description, aboutItems} = aboutData;
   return (
+    <Section name='about' className="bg-neutral-800">
+      <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
+        {!!profileImageSrc && (
+          <div className="col-span-1 flex justify-center md:justify-start">
+            <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
+              <img alt="about-me-image" className="h-full w-full object-cover" src={profileImageSrc} />
 
-    <Element name='about'>
-       Start 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu porta orci. Aenean tempor sagittis viverra. Phasellus interdum felis aliquet nunc scelerisque cursus. Mauris varius, magna quis cursus venenatis, risus magna commodo ligula, et semper mi justo vel turpis. Duis vitae magna eros. Vivamus vel nibh auctor, lobortis lacus id, volutpat nibh. Morbi ullamcorper, ex aliquam egestas scelerisque, dui nisi tempus nisl, et condimentum quam eros nec purus. Phasellus sapien risus, sagittis vitae est sed, consequat pretium diam. In a sapien euismod, fringilla ex quis, gravida est. Maecenas sit amet nunc sed orci vulputate porttitor. Suspendisse nec velit in nisi ultricies ultricies a et urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur porttitor diam lectus, sit amet euismod magna suscipit ac. Morbi ac ligula lorem. Vestibulum porta lacinia aliquet. Curabitur id velit eu velit elementum imperdiet.
-
-Etiam scelerisque non libero et facilisis. Curabitur sit amet rhoncus mauris, id maximus nisi. Sed vulputate ut leo at laoreet. Donec ac lacus porttitor, vestibulum dolor sed, condimentum quam. Nullam eu magna vitae purus condimentum ullamcorper. Nunc non massa bibendum leo pretium tincidunt non sed lacus. Vivamus rhoncus lorem eu augue varius, eu vehicula quam auctor. Phasellus tempor condimentum odio vitae suscipit. Integer malesuada ipsum vitae vulputate bibendum. Aliquam lorem purus, ornare vitae augue ut, interdum interdum odio. Nunc vel porta arcu. Donec nisl nisi, cursus sed ipsum vel, pharetra accumsan turpis. Curabitur facilisis erat erat, ut pulvinar dolor rhoncus quis. Quisque semper dapibus turpis. Morbi ultrices odio et porta aliquam.
-
-Mauris vitae orci lorem. Nunc vitae consequat libero, id congue magna. Sed egestas lacus justo, id eleifend purus molestie nec. Suspendisse sit amet ullamcorper massa. Phasellus ac nulla pharetra, bibendum ipsum nec, aliquam felis. Duis eros velit, mattis at ex dignissim, facilisis interdum tellus. Donec quis nulla nisl. Donec egestas eros feugiat suscipit cursus. Quisque et suscipit ante. Etiam at viverra ex, nec condimentum velit. Aenean commodo fermentum dolor a scelerisque. Sed varius tincidunt dui a posuere. Ut elementum, orci et rhoncus maximus, est turpis faucibus nunc, eu dapibus leo nunc ac nunc.
-
-Curabitur interdum lorem et nunc blandit, semper suscipit lorem venenatis. Aenean consectetur nisi sit amet justo dapibus, placerat suscipit mauris ultricies. Praesent in faucibus orci, ac pellentesque tortor. Nam molestie dolor lacinia urna congue eleifend non et orci. Proin tempus ipsum et commodo hendrerit. Maecenas feugiat ac ligula id scelerisque. Fusce eget ligula nisl. Donec convallis feugiat mi, id luctus magna euismod vitae. Vivamus non egestas orci, a fermentum ipsum. Proin eget facilisis mi. Quisque pretium nunc ut metus venenatis, a tincidunt diam feugiat. Mauris tincidunt pellentesque nulla at accumsan. Maecenas tellus mi, consectetur ac ipsum nec, facilisis dictum nulla. Cras quis sollicitudin justo. Aliquam rhoncus tincidunt ante, sed elementum neque commodo et. Aenean tempus lobortis vulputate.
-
-Proin finibus, leo non varius viverra, elit nibh placerat purus, nec cursus quam lorem ac est. Pellentesque at est non lacus volutpat dignissim non id massa. Donec a neque augue. Maecenas cursus tellus eu justo euismod, nec gravida magna porttitor. Morbi dolor ligula, aliquam sit amet bibendum vel, lacinia nec diam. Praesent eget odio in tortor faucibus posuere. Etiam suscipit lacus nec commodo imperdiet. Phasellus fermentum ex nibh. Maecenas ut convallis tellus. Proin quis ex at eros pellentesque luctus. Suspendisse id risus ac sapien scelerisque pellentesque. Duis posuere sollicitudin libero. Sed non ultricies velit. Vivamus laoreet tellus ut quam commodo vestibulum. Maecenas sit amet venenatis orci.
-
-Maecenas malesuada velit eu lorem consequat eleifend. Praesent pellentesque diam id ligula commodo congue. Curabitur maximus molestie ipsum, vel eleifend orci tempor nec. Suspendisse auctor velit justo, sed sollicitudin nulla dictum eget. Sed faucibus, enim sed feugiat pretium, dolor tortor elementum nisl, lobortis finibus lacus sem ultricies erat. Nullam et tempor nulla. Pellentesque dictum metus id nisl varius, rutrum finibus eros scelerisque. Duis eu nisi pharetra, dapibus diam in, blandit odio. Vivamus eleifend scelerisque sodales. Sed purus augue, mattis sit amet libero eu, varius lacinia sapien. Mauris aliquet justo in diam sagittis semper. Aliquam erat volutpat. Sed commodo felis eget laoreet luctus. Curabitur eget eros malesuada, ultrices nisi sit amet, convallis eros. Phasellus consectetur ut magna quis maximus.
-
-Vestibulum vel rhoncus enim. Sed at euismod lectus. Morbi vulputate dapibus scelerisque. Fusce mi quam, ultricies eu congue sit amet, eleifend porttitor turpis. In elementum, risus vitae mollis sollicitudin, lectus mauris sagittis justo, eget blandit massa nulla ultricies diam. Nulla non faucibus neque, vel pellentesque sapien. Nullam viverra tempus nisl, et lacinia arcu aliquam ac. Mauris at diam gravida, cursus massa sit amet, rhoncus libero. Nunc quis ante pulvinar, varius sapien a, elementum nunc. Pellentesque vestibulum gravida lectus, ut egestas libero pharetra in. Nullam metus dui, dignissim a nibh ut, venenatis dignissim lorem. Praesent ornare nunc eu massa aliquam, sed convallis turpis feugiat. Duis at erat malesuada, lobortis felis sit amet, euismod urna. Donec nec dolor ac augue rhoncus consequat. Suspendisse non dolor nec ipsum iaculis sagittis eget eu nibh.
-
-Etiam eget magna auctor, cursus eros sodales, venenatis arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nisi urna, ultrices ut tortor in, rutrum vehicula risus. Maecenas semper turpis turpis, ut euismod velit dignissim vulputate. Proin in massa laoreet, condimentum ante non, rutrum libero. Praesent id mauris pretium, iaculis elit sed, pellentesque elit. Suspendisse non pretium risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eu orci eros. Maecenas venenatis metus eget enim bibendum fermentum. Morbi pharetra ultricies velit ut egestas.
-
-Nam ullamcorper tellus ac est lobortis facilisis. Quisque dui nisi, mollis at mollis eget, pharetra non magna. In at volutpat odio, quis ornare velit. Maecenas ultrices pulvinar velit eu ultricies. Aliquam pellentesque aliquam ligula, finibus facilisis nisi. Integer tempor, nisi et cursus varius, lacus magna malesuada mi, a tristique ipsum nisi quis ligula. In nec euismod ligula, quis laoreet nunc. In eu turpis massa. Quisque at nulla arcu. Aliquam a pulvinar mi. Ut ultricies eget metus vel fermentum. Duis tempus nulla vitae efficitur lacinia.
-
-Praesent non risus et sapien venenatis tincidunt et aliquet augue. Quisque vitae lobortis nibh. Fusce aliquet lacus et nunc gravida tincidunt. Praesent efficitur eu mi ut bibendum. Morbi quis sagittis diam, a fringilla nunc. Suspendisse erat enim, convallis et neque vitae, ultricies dictum metus. Sed ac diam placerat, luctus tortor ac, tincidunt sapien. Duis molestie enim congue nulla iaculis auctor. Sed at dolor volutpat, rhoncus purus id, eleifend quam. Duis dapibus vestibulum leo, efficitur luctus leo rutrum at. Mauris vulputate lectus at dolor tempor, quis fringilla nisi imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sed quam ut felis lacinia venenatis.
-    </Element>
+            </div>
+          </div>
+        )}
+        <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl font-bold text-white">About me</h2>
+            <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
+          </div>
+          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {aboutItems.map(({label, text, Icon}, idx) => (
+              <li className="col-span-1 flex  items-start gap-x-2" key={idx}>
+                {Icon && <Icon className="h-5 w-5 text-white" />}
+                <span className="text-sm font-bold text-white">{label}</span>
+                <span className=" text-sm text-gray-300">{text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </Section>
 
   )
 }
