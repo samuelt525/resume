@@ -6,7 +6,7 @@ import Section from '../layouts/Section';
 import Social from '../components/Social';
 import {Link} from 'react-scroll'
 
-import background from '../images/924472.jpeg'
+import background from '../images/924472.webp'
 
 export default function Hero(){ 
     const {imageSrc, name, description, actions} = HeroData;

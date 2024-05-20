@@ -4,6 +4,8 @@ import sig from "./images/sig.svg";
 import wolf from "./images/wolf.png";
 import resume from "./assets/resume.pdf";
 import hero from "./images/hero.PNG";
+import hua from "./images/HuaByDorothy.jpg"
+import motionTracker from './images/SalvageLogo.webp'
 import {
   ArrowDownTrayIcon,
   MapIcon,
@@ -241,7 +243,7 @@ export const TestimonialData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
     image: hero,
     person: "Dorothy Li",
-    actions: [{}],
+    actions: [],
   },
   {
     role: "Manager",
@@ -270,16 +272,16 @@ export const TestimonialData = [
 ];
 export const ProjectData = [
   {
-    title: "Hua",
-    image: null,
+    title: "Hua by Dorothy Li",
+    image: hua, 
     tech: "Wix",
-    link: "",
-    description: "",
+    link: "https://www.huabydorothy.com/",
+    description: "Hua By Dorothy is an ecommerce website designed for my friend to sell a variety of flowers, bouquets, and corsages, for the holidays and special occasions",
     motive: "Free Lance, Favor, Club",
   },
   {
     title: "Race Walking Motion Tracker",
-    image: null,
+    image: motionTracker,
     tech: "Qt, Python",
     link: "",
     description: "",

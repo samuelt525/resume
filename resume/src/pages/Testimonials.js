@@ -5,7 +5,7 @@ import {Mousewheel, EffectCoverflow, Pagination} from 'swiper/modules'
 import Card from '../components/Card'
 import 'swiper/css'
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade'
+import 'swiper/css/effect-coverflow';
 
 import { TestimonialData } from '../data'
 
@@ -16,12 +16,14 @@ export default function Testimonials() {
             <Swiper
             pagination={{
             dynamicBullets: true,
+            clickable: true,
             }}
+            
             effect={'coverflow'}
             speed={1000}
             coverflowEffect={{slideShadows: false}}
             mousewheel={{ forceToAxis: true, sensitivity: .1 }}  // Enable trackpad scrolling
-            modules={[Pagination,Mousewheel, EffectCoverflow]}
+            modules={[Pagination, Mousewheel, EffectCoverflow]}
             className=""
             >
           {TestimonialData.map((data, index) => (
