@@ -4,7 +4,6 @@ import {Link} from 'react-scroll'
 import './Header.css'
 
 export default function Header(){
-
     return ( 
         <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-3 backdrop-blur sm:block">
             <nav className="flex justify-end gap-x-8 flex-column p-x-2 m-x-2 content-between">
@@ -16,7 +15,7 @@ export default function Header(){
                         <Link to="resume" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100 "> Resume  </Link>
                         </li>
                     <li className="nav-item">
-                        <Link to="Project Experience" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100"> Project Experience </Link>
+                        <Link to="project experience" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100"> Project Experience </Link>
                         </li>
                     <li className="nav-item">
                         <Link to="testimonials" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100 "> Testimonials </Link> 

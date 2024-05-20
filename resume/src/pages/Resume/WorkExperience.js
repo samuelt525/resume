@@ -9,7 +9,6 @@ function WorkExperience({WorkExperience}) {
     responsibilities,
     image
   } = WorkExperience
-  console.log(company)
   return (
     <div className="flex flex-col text-left pb-8">
       <div className="flex flex-col pb-4"> 

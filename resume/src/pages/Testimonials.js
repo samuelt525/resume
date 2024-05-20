@@ -1,22 +1,28 @@
 import React from 'react'
 import Section from '../layouts/Section'
 import {Swiper, SwiperSlide} from "swiper/react"
-import {Navigation, Pagination, Scrollbar} from 'swiper/modules'
+import {Mousewheel, EffectCoverflow, Pagination} from 'swiper/modules'
 import Card from '../components/Card'
 import 'swiper/css'
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade'
+
 import { TestimonialData } from '../data'
 
 export default function Testimonials() {
   return (
-    <Section name='testimonials' className="bg-blue-500">
+    <Section name='testimonials' className="">
         <div>
             <Swiper
             pagination={{
             dynamicBullets: true,
             }}
-            modules={[Pagination]}
-            className="bg-orange-500"
+            effect={'coverflow'}
+            speed={1000}
+            coverflowEffect={{slideShadows: false}}
+            mousewheel={{ forceToAxis: true, sensitivity: .1 }}  // Enable trackpad scrolling
+            modules={[Pagination,Mousewheel, EffectCoverflow]}
+            className=""
             >
           {TestimonialData.map((data, index) => (
             <SwiperSlide className='p-8'>
