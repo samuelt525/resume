@@ -1,0 +1,11 @@
+.hamburger{
+    display: none;
+
+}
+
+
+.nav-item .active {
+    padding-bottom: 4px;
+    border-bottom: 3px solid orange 
+
+}

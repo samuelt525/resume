@@ -13,15 +13,6 @@ import { SiFirebase, SiMongodb,SiPostgresql } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import Skills from './pages/Resume/Skills';
 
-export const SectionId = {
-    Hero: 'hero',
-    About: 'about',
-    Contact: 'contact',
-    Resume: 'resume',
-    Skills: 'skills',
-    Testimonials: 'Testimonials'
-}
-
 export const HeroData = {
     imageSrc: heroImage,
     name: "I'm Samuel Tsui",
@@ -206,3 +197,25 @@ export const aboutData = {
       {label: 'Employment', text: 'NA', Icon: BuildingOffice2Icon},
     ],
   };
+
+export const TestimonialData = [
+    {
+        role: "Customer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
+        image: hero,
+        person: "Dorothy Li"
+    },
+    {
+        role: "Manager",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
+        image: hero,
+        person: "Michael Kassabov"
+    },
+    {
+        role: "Classmate",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
+        image: hero,
+        person: "Sean Rhee"
+    },
+
+]

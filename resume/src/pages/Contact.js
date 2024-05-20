@@ -4,7 +4,7 @@ import Section from '../layouts/Section'
 export default function Contact() {
   return (
 
-    <Element name='Contact'>
+    <Element name='contact'>
        Start 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu porta orci. Aenean tempor sagittis viverra. Phasellus interdum felis aliquet nunc scelerisque cursus. Mauris varius, magna quis cursus venenatis, risus magna commodo ligula, et semper mi justo vel turpis. Duis vitae magna eros. Vivamus vel nibh auctor, lobortis lacus id, volutpat nibh. Morbi ullamcorper, ex aliquam egestas scelerisque, dui nisi tempus nisl, et condimentum quam eros nec purus. Phasellus sapien risus, sagittis vitae est sed, consequat pretium diam. In a sapien euismod, fringilla ex quis, gravida est. Maecenas sit amet nunc sed orci vulputate porttitor. Suspendisse nec velit in nisi ultricies ultricies a et urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur porttitor diam lectus, sit amet euismod magna suscipit ac. Morbi ac ligula lorem. Vestibulum porta lacinia aliquet. Curabitur id velit eu velit elementum imperdiet.
 

@@ -12,8 +12,7 @@ export default function About() {
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
-              <img alt="about-me-image" className="h-full w-full object-cover" src={profileImageSrc} />
-
+              <img className="h-full w-full object-cover" src={profileImageSrc} />
             </div>
           </div>
         )}

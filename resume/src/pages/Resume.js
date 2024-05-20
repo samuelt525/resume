@@ -1,18 +1,14 @@
 import React from 'react'
 import Section from '../layouts/Section'
-import { SkillsData, WorkExperienceData, SectionId, EducationData } from '../data'
+import { SkillsData, WorkExperienceData, EducationData } from '../data'
 import ResumeSection from '../layouts/ResumeSection'
 import Skills from './Resume/Skills'
 import Education from './Resume/Education'
 import WorkExperience from './Resume/WorkExperience'
 
 export default function Resume() {
-    const CompanyImages = WorkExperienceData.map((workExperience) => workExperience.image)
-
-
-    console.log(CompanyImages)
-  return (
-    <Section sectionId={SectionId.Resume} images={null}>
+    return (
+    <Section name='resume' images={null}>
         <div className="flex flex-col divide-y-2 divide-neutral-300" >
             <ResumeSection title="Education">
                 <div className='="flex flex-col divide-y-2'>
