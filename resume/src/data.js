@@ -11,6 +11,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineDotNet, AiOutlineJavaScript } from "react-icons/ai";
 import { SiFirebase, SiMongodb,SiPostgresql } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
+import { FaFlag } from 'react-icons/fa'
 import Skills from './pages/Resume/Skills';
 
 export const HeroData = {
@@ -18,8 +19,7 @@ export const HeroData = {
     name: "I'm Samuel Tsui",
     description: (
         <p>
-            I am a Full Stack Software Engineer trying to land my first Job in the Corporate World.
-            Thank you for clicking on my site!
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla.  
         </p>
     ),
     actions: [{
@@ -161,17 +161,17 @@ export const SkillsData = [
         skills: [
             {
                 name: 'English',
-                Icon: FaJava,
+                flag: '🇺🇸',
                 level: 10,
             },
             {
                 name: 'Chinese',
-                Icon: FaJava,
+                flag: '🇨🇳',
                 level: 4,
             },
             {
                 name:'Korean',
-                Icon: FaJava,
+                flag: '🇰🇷',
                 level: 6,
             }]
         },
@@ -185,9 +185,7 @@ export const SocialData = [
 ]
 export const aboutData = {
     profileImageSrc: hero,
-    description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-    to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-    in.`,
+    description: ``,
     aboutItems: [
       {label: 'Location', text: 'Philadelphia, PA', Icon: MapIcon},
       {label: 'Age', text: '24', Icon: CalendarIcon},
@@ -203,19 +201,27 @@ export const TestimonialData = [
         role: "Customer",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
         image: hero,
-        person: "Dorothy Li"
+        person: "Dorothy Li",
+        actions: [
+            {
+
+            }
+        ]
     },
     {
         role: "Manager",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
         image: hero,
-        person: "Michael Kassabov"
+        person: "Michael Kassabov",
+        actions: []
     },
     {
         role: "Classmate",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
         image: hero,
-        person: "Sean Rhee"
+        person: "Sean Rhee",
+        actions: []
+
     },
 
 ]

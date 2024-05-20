@@ -16,7 +16,7 @@ export default function Skills({skill}) {
 
 
 function Skill({skill}){
-    const {name, Icon, level, max = 10} = skill
+    const {name, Icon, level, flag, max = 10} = skill
 
 
     const percentage = useMemo(() => Math.round((level/max) * 100), [level,max])
@@ -24,6 +24,7 @@ function Skill({skill}){
         <div className="flex flex-col gap-y-2">
             <div className="flex items-center"> {/* Flex container for horizontal alignment */}
                 {Icon && <Icon className="mr-2" />} {/* Icon with margin to the right */}
+                {flag ?? <span> {flag} </span>}
                 <span className="text-sm font-medium m-1 ">{name}</span> {/* Skill name */}
             </div>
             <div className="h-5 w-full overflow-hidden rounded-full bg-neutral-300"> {/* Added margin-top */}
