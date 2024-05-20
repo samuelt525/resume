@@ -33,7 +33,7 @@ export default function Hero(){
                             {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                             </a>
                         ) : (
-                            <Link to={href}  offset={-64} smooth={true} 
+                            <Link to={href}  offset={-50} spy={true} smooth={true} 
                             className={classNames('flex justify-center m-1 gap-x-2 py-2 rounded-full border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
                                 primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white', Icon ? "px-4" : "px-3")}>
                                 {text}
@@ -42,7 +42,7 @@ export default function Hero(){
                     </div>
                 </div>
                 <div className="absolute inset-x-0 bottom-6 flex justify-center">
-                    <Link to="About" smooth={true} duration={500} className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2">
+                    <Link to="about" offset={-50} smooth={true} duration={500} className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2">
                         <ChevronDownIcon className="h-6 w-6 bg-white sm:h-6 sm:w-6/"/> 
                     </Link>
                 </div>

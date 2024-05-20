@@ -9,19 +9,19 @@ export default function Header(){
             <nav className="flex justify-end gap-x-8 flex-column p-x-2 m-x-2 content-between">
                 <ul className="flex jusitfy-center gap-x-8">
                     <li className="nav-item">
-                        <Link to="about" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100 "> About </Link>
+                        <Link to="about" spy={true} offset={-50} smooth={true} className="font-bold text-xl text-neutral-100 "> About </Link>
                         </li>
                     <li className="nav-item">
-                        <Link to="resume" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100 "> Resume  </Link>
+                        <Link to="resume" spy={true} offset={-50} smooth={true} className="font-bold text-xl text-neutral-100 "> Resume  </Link>
                         </li>
                     <li className="nav-item">
-                        <Link to="project experience" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100"> Project Experience </Link>
+                        <Link to="project experience" spy={true} offset={-50} smooth={true} className="font-bold text-xl text-neutral-100"> Project Experience </Link>
                         </li>
                     <li className="nav-item">
-                        <Link to="testimonials" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100 "> Testimonials </Link> 
+                        <Link to="testimonials" spy={true} offset={-50} smooth={true} className="font-bold text-xl text-neutral-100 "> Testimonials </Link> 
                         </li>
                     <li className="nav-item">
-                        <Link to="contact" spy={true} offset={-64} smooth={true} className="font-bold text-xl text-neutral-100 "> Contact </Link>
+                        <Link to="contact" spy={true} offset={-50} smooth={true} className="font-bold text-xl text-neutral-100 "> Contact </Link>
                         </li>
                 </ul>
                 

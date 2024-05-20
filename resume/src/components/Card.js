@@ -14,9 +14,9 @@ function Card({testimonial}) {
       </div>
       <div className="flex flex-col px-10">
         <div className="flex flex-row mx-10 gap-x-1">
-          <h2 className="text-xl font-bold justify-center"> {person} </h2>
+          <h2 className="flex text-xl font-bold justify-center"> {person} </h2>
           <h2 className="text-xl justify-center"> • </h2>
-          <h2 className="text-m italic justify-center"> {role} </h2>
+          <h2 className="flex text-m italic leading-7 justify-center"> {role} </h2>
         </div>
         <div className="flex">
           {description}

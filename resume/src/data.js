@@ -55,11 +55,11 @@ export const HeroData = {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: "Projects",
+      href: "project experience",
       text: "Projects",
     },
     {
-      href: "Contacts",
+      href: "contact",
       text: "Contacts",
     },
   ],
@@ -239,8 +239,11 @@ export const aboutData = {
 export const TestimonialData = [
   {
     role: "Customer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
+    description:` I couldn't be happier with the website designed for my flower business by Sam. 
+    It perfectly showcases my bouquets, corsages, and floral arrangements for special holidays and events. 
+    Sam did an incredible job creating a visually stunning site that truly captures the essence of my floral designs. 
+    Whenever I need updates or changes, Sam is always there to help, ensuring the site stays fresh and up-to-date with the Season. 
+    Beyond being a talented web designer, Sam is a fantastic friend, and his support has been invaluable to the success of my business. Highly recommended!`, 
     image: hero,
     person: "Dorothy Li",
     actions: [],
@@ -263,8 +266,10 @@ export const TestimonialData = [
   },
   {
     role: "Classmate",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
+    description: `Throughout our time at university, I was constantly impressed with Sam's work ethic. 
+    Our projects consistently excelled, largely due to Sam's effort and his attention to detail. Sam cares about the user experience, ensuring that our interfaces are not only functional, but visually appealing as well. 
+    Beyond his strong work ethic, navigating any disagreements regarding our projects was seamless with Sam. 
+    He remained openminded to conflicts, facilitating swift resolutions. Working with Sam on programming projects was truly a delight.`,
     image: hero,
     person: "Sean Rhee",
     actions: [],
@@ -275,30 +280,39 @@ export const ProjectData = [
     title: "Hua by Dorothy Li",
     image: hua, 
     tech: "Wix",
-    link: "https://www.huabydorothy.com/",
+    link: [{
+      github: '',
+      link: "https://www.huabydorothy.com/",
+    }],
     description: "Hua By Dorothy is an ecommerce website designed for my friend to sell a variety of flowers, bouquets, and corsages, for the holidays and special occasions",
     motive: "Free Lance, Favor, Club",
   },
   {
     title: "Race Walking Motion Tracker",
     image: motionTracker,
-    tech: "Qt, Python",
-    link: "",
-    description: "",
+    tech: "Qt, Python, OpenCV AI Library",
+    link: [{
+      github: "https://github.com/samuelt525/MotionTracker54",
+      link: ''
+    }],
+    description: "Developed a GUI Application using OpenCV AI algorithms to intelligently detect race walkers in race walking footage to cutout non-relevant segments. ",
     motive: "Senior Project",
   },
   {
     title: "Project Dungeon",
     image: null,
     tech: "Unity 3D",
-    link: "",
+    link: [{
+      github: 'https://github.com/Halo-nm/CI-Project-GitHub',
+      link: "https://www.youtube.com/watch?v=H948jkMmIRo",
+    }], 
     description: "",
-    motive: "Senior Project",
+    motive: "",
   },
   {
     title: "Chingu",
     image: null,
-    tech: "",
+    tech: "React, Firebase, Electron",
     link: "",
     description: "",
     motive: "",
