@@ -15,8 +15,8 @@ export default function Hero(){
         <Section sectionId="hero" noPadding={true}>
             <div className="relative flex h-screen w-full items-center justify-center flex-row">
                 <img src={background} className="absolute z-0 h-full w-full object-cover" />
-                <div className="flex flex-col items-center shadow-xl backdrop-blur-sm">
-                    <h1 className="text-4xl font-bold text-cyan-950 sm:text-5xl lg:text-7xl"> {name} </h1>
+                <div className="flex flex-col items-center shadow-2xl backdrop-blur-sm rounded-md p-8">
+                    <h1 className="text-4xl font-bold text-gray-950 sm:text-5xl lg:text-7xl"> {name} </h1>
                     <p> {description} </p>
                     <div className='flex flex-row m-2 gap-4'>
                         <Social/>

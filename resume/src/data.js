@@ -35,17 +35,11 @@ export const HeroData = {
   imageSrc: heroImage,
   name: "I'm Samuel Tsui",
   description: (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt
-      tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa
-      nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus
-      lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum
-      ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum
-      vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est
-      a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed,
-      porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis,
-      convallis erat. Suspendisse non imperdiet nulla.
-    </p>
+    <div className="flex flex-col justify-center items-center text-gray-800">
+      <p>
+        Hello, Thanks for clicking onto my newly created site 5/15, you can check the progress of it with the github link below. 
+      </p>
+    </div>
   ),
   actions: [
     {
@@ -306,10 +300,10 @@ export const ProjectData = [
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
     }, 
-    description: `This project is a captivating 2D top-down roguelike game developed in Unity, inspired by the classic gameplay of "The Legend of Zelda." 
-    Players can choose between two distinct classes, Warrior and Archer, each with unique abilities, stats, and playstyles. 
-    The game features meticulously designed custom levels, offering a diverse range of challenges and environments. 
-    The enemy AI is crafted to provide dynamic and challenging encounters, mobs would shoot projectiles, spring onto your most recent location, or follow you around. 
+    description: `This project is a 2D top-down roguelike game developed in Unity, inspired by the game "The Legend of Zelda and Binding of Isaac." 
+    Players can choose between two classes, Warrior and Archer, each with unique abilities, stats, and playstyles. 
+    The game features custom designed levels, offering a diverse range of challenges and environments. 
+    The enemy AI was created to provide dynamic and challenging encounters, mobs would shoot projectiles, spring onto your most recent location, or follow you around. 
     The combination of compelling classes, intricate level design, and engaging game mechanics ensures an immersive and enjoyable gameplay experience.`,
     motive: "CI 101-103 Project",
   },
@@ -330,17 +324,15 @@ export const ProjectData = [
   {
     title: "Vybify",
     image: null,
-    tech: "",
+    tech: "Angular, SpotifyAPI, Cookies, OAuth Token",
     link: {
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
     }, 
-    description: `Vybify is an application developed with Angular that uses Spotify API to curate personalized playlists directly in your Spotify account based on the inputted songs
+    description: `Vybify is an application developed with Angular that uses Spotify API to curate personalized playlists directly in your Spotify account based on the inputted song
     Using sophisticated Algorithms, Vybify analyzes various musical attributes, including genre, tempo, valence, and key to create playlists that match your preferences and listening habits.
-    The application uses OAuth tokens to securely authenticate users and access their Spotify accounts, ensuring a seamless and secure integration. \
-    Additionally, Vybify utilizes cookies to store user preferences and session information, enhancing the user experience by providing persistent and personalized interactions. 
-    By combining the powerful features of Javascript with the Spotify API, Vybify offers an intuitive user experience, allowing you to discover and enjoy music that aligns perfectly with your vibe. 
-    Whether you're looking for high-energy tracks for a workout or mellow tunes for relaxation, Vybify intelligently compiles the ideal playlist, enhancing your music experience with precision and creativity.`,
+    The application uses OAuth tokens to securely authenticate users and access their Spotify accounts, ensuring a seamless and secure integration.
+    Additionally, Vybify utilizes cookies to store user preferences and session information, enhancing the user experience by providing persistent and personalized interactions. `,
     motive: "",
   },
 ];
