@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../layouts/Section'
-
+import {motion} from 'framer-motion'
 import { ProjectData } from '../data'
 import ProjectCard from '../components/ProjectCard'
 function ProjectExperience() {
@@ -14,13 +14,13 @@ function ProjectExperience() {
               <span className="absolute inset-x-0 -bottom-1 border-b-2 border-orange-400"/>
           </div>
         </div>
-        <div className="grid grid-cols-3 m-3 p-4 auto-rows-fr items-center gap-4 ">
+        <motion.div layout="preserve-aspect" className="grid grid-cols-3 m-3 p-4 auto-rows-fr items-center gap-4 ">
               <ProjectCard project={ProjectData[0]}/>
               <ProjectCard project={ProjectData[1]}/>
               <ProjectCard project={ProjectData[2]}/>
               <ProjectCard project={ProjectData[3]}/>
               <ProjectCard project={ProjectData[4]}/>
-        </div>
+        </motion.div>
         
     </Section>
   )
