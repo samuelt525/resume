@@ -17,6 +17,8 @@ function WorkExperience({WorkExperience}) {
       <div className="flex items-center">
         <span className="text-sm font-medium italic">{role}</span>
         <span className="mx-2">•</span>
+        <span className="text-sm font-medium">{location}</span> 
+        <span className="mx-2">•</span>
         <span className="text-sm font-medium">{date}</span>
       </div>
       <div>

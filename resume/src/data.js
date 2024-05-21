@@ -93,7 +93,7 @@ export const WorkExperienceData = [
     company: "Belay (formally Wolf Financial)",
     date: "September 2020 - September 2021",
     location: "Philadelphia, PA",
-    role: "Front-End Application Developer Intern",
+    role: "Front-End Application Developer",
     responsibilities: [
       "Developed and maintained a cross-platform (IOS, Android) mobile application 'Wolf Financial' using React Native and JavaScript, fostering a community of 2000 users for a dynamic space to discuss and share stock trades",
       "Implemented WebSockets and API endpoints using Plaid API facilitating real-time retrieval of stock and user data for user portfolios",

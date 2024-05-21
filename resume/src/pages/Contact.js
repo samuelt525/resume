@@ -1,50 +1,81 @@
 import React, { useState, useRef } from "react";
 import { Element } from "react-scroll";
 import Section from "../layouts/Section";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-
-  const form = useRef()
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_rgtp8mz', 'template_jtxk7hb', form.current, {
-      publicKey: '8pCNnx3CNLI77KO1f'
-    })
-    .then(
-      () => {
-        console.log('Success!')
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-      },
-    );
+    emailjs
+      .sendForm("service_rgtp8mz", "template_jtxk7hb", form.current, {
+        publicKey: "8pCNnx3CNLI77KO1f",
+      })
+      .then(
+        () => {
+          console.log("Success!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
-    <Section name="contact" noPadding={true}>
-      <h2> Contact Me! </h2>
-      <form ref={form} onSubmit={sendEmail}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            required
-          />
+    <Section name="contact" className="bg-gray-900 text-gray-200" >
+      <h1 className='text-xl font-bold uppercase text-white text-start'>Get in Touch</h1>
+      <div className="grid grid-cols-2 ">
+        <div className="flex flex-col cols-span-1">
+          <span>
+            Have a project for me? Any questions about something I've built? I'd
+            love to hear from you, give me a shout by email or by using the form
+            below if you'd like to get in contact with me.
+          </span>
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" name="email" required/>
+        <div className="col-span-1 w-full">
+          <form ref={form} onSubmit={sendEmail}>
+            <label htmlFor="name" className="sr-only">
+              Name:
+            </label>
+            <div className="relative mt-1 rounded-md">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                className="block w-full rounded-md bg-gray-800 px-4 py-2 text-white focus:outline-none  "
+              />
+            </div>
+            <div className="relative mt-1 rounded-md">
+              <label htmlFor="email" className="sr-only">
+                Email:
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                className="block w-full rounded-md bg-gray-800 px-4 py-2 text-white focus:outline-none"
+              />
+            </div>
+            <div className="relative mt-1 rounded-md">
+              <label htmlFor="message" className="sr-only">
+                Message:
+              </label>
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+                rows={6}
+                className="block w-full rounded-md border-none bg-gray-800 px-3 py-2 text-white shadow-xl shadow-black/30 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-sm placeholder-gray-400 focus:border-gray-500 focus:ring-gray-500"
+              />
+            </div>
+            <div className="flex justify-start">
+              <input type="submit" value="Send Email" className="w-max rounded-full border-2 border-orange-500 bg-gray-800 px-4 py-2 text-sm font-medium text-white shadow-md outline-none"/>
+            </div>
+          </form>
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" required/>
-        </div>
-        <div>
-          <input type='submit' value='Send'/>
-        </div>
-      </form>
+      </div>
     </Section>
   );
 }
