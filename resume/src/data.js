@@ -280,21 +280,21 @@ export const ProjectData = [
     title: "Hua by Dorothy Li",
     image: hua, 
     tech: "Wix",
-    link: [{
+    link: {
       github: '',
       link: "https://www.huabydorothy.com/",
-    }],
+    },
     description: "Hua By Dorothy is an ecommerce website designed for my friend to sell a variety of flowers, bouquets, and corsages, for the holidays and special occasions",
     motive: "Free Lance, Favor, Club",
   },
   {
     title: "Race Walking Motion Tracker",
     image: motionTracker,
-    tech: "Qt, Python, OpenCV AI Library",
-    link: [{
+    tech: "Qt, Python, OpenCV",
+    link: {
       github: "https://github.com/samuelt525/MotionTracker54",
       link: ''
-    }],
+    },
     description: "Developed a GUI Application using OpenCV AI algorithms to intelligently detect race walkers in race walking footage to cutout non-relevant segments. ",
     motive: "Senior Project",
   },
@@ -302,10 +302,10 @@ export const ProjectData = [
     title: "Project Dungeon",
     image: null,
     tech: "Unity 3D",
-    link: [{
+    link: {
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
-    }], 
+    }, 
     description: "",
     motive: "",
   },
@@ -313,7 +313,10 @@ export const ProjectData = [
     title: "Chingu",
     image: null,
     tech: "React, Firebase, Electron",
-    link: "",
+    link: {
+      github: 'https://github.com/Halo-nm/CI-Project-GitHub',
+      link: "https://www.youtube.com/watch?v=H948jkMmIRo",
+    }, 
     description: "",
     motive: "",
   },
@@ -321,7 +324,10 @@ export const ProjectData = [
     title: "Vybify",
     image: null,
     tech: "",
-    link: "",
+    link: {
+      github: 'https://github.com/Halo-nm/CI-Project-GitHub',
+      link: "https://www.youtube.com/watch?v=H948jkMmIRo",
+    }, 
     description: "",
     motive: "",
   },

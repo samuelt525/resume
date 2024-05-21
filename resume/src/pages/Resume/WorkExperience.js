@@ -24,7 +24,7 @@ function WorkExperience({WorkExperience}) {
       </div>
       <div>
         {responsibilities.map((responsibility, index) => (
-          <ul key={index} className="list-disc">
+          <ul key={index} className="list-disc ml-4">
             <li>{responsibility}</li>
           </ul>
         ))}

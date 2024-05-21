@@ -1,34 +1,39 @@
 import React, {useState} from "react";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, className }) {
   const { title, image, tech, link, description, motive } = project;
-
+  const github = link.github
+  const otherLink = link.link
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div >
-      <motion.div transition={{layout: {type: "spring"}}}  layout onClick={() => setIsOpen(!isOpen)} 
-        className="w-full h-full bg-white rounded-lg p-4 flex flex-col items-center cursor-pointer">
-        <motion.img layout="position" className="flex justify-center" src={image} />
-        <motion.h2 layout="position" className="font-bold text-m ">{title}</motion.h2>
+  
+      <motion.div layout onClick={() => setIsOpen(!isOpen)} 
+        className="bg-white rounded-lg shadow-md p-12 flex flex-col cursor-pointer">
+        <motion.div className="w-full h-32 flex flex-col justify-center"> 
+          <motion.img  width={100} layout="position" src={image} />
+          <motion.h2 layout="position" className="font-bold text-m ">{title}</motion.h2>
+        </motion.div>
+
         {isOpen && (
-          <div>
-            <motion.div>
+            <motion.div className="flex flex-col justify-center">
               <motion.div className="text-sm italic">
                 {tech}
               </motion.div>
-                <p>
+                <motion.p className="flex justify-center">
                   {description}
-                </p>
+                </motion.p>
             </motion.div>
-            </div>
-        )}  
-        <motion.a href={link} className="flex justify-end"> <FaExternalLinkAlt /></motion.a>
+        )}
+        <motion.div layout className="flex flex-row justify-end gap-x-2">
+          {github && <motion.a href={github} className="flex justify-end"> <FaGithub/></motion.a>}
+          {otherLink && <motion.a href={otherLink} className="flex justify-end"> <FaExternalLinkAlt /></motion.a>}
+        </motion.div>
+
       </motion.div>
-    </div>
   );
 }
 
