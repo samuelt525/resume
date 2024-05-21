@@ -26,14 +26,14 @@ export default function Resume() {
             </div>
           </div>
           <div className="grid lg:grid-cols-5 lg:lgrid-rows-3  lg:auto-cols-fr lg:auto-rows-fr lg:gap-4 sm:gap-1 md:grid-cols-1 sm:grid-cols-1">
-            <div className="lg:col-span-2 flex flex-row lg:gap-x-14 sm:gap-1  sm:col-span-1">
+            <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 sm:gap-1  sm:col-span-1">
                 <img style={{width: "200px", height: "100%"}} src={WorkExperienceData[0].image} ></img>
             </div>
             <div className="lg:col-span-3 sm:col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[0]} />
             </div>
 
-            <div className="lg:col-span-2 flex flex-row lg:gap-x-14 sm:gap-1 sm:col-span-1">
+            <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 sm:gap-1 sm:col-span-1">
                 <img className="lg:w-1/2 lg:h-1/2 " src={WorkExperienceData[1].image} ></img>
             </div>
             <div className="lg:col-span-3 sm:col-span-1">
@@ -41,7 +41,7 @@ export default function Resume() {
             </div>
 
 
-            <div className="lg:col-span-2 flex flex-row lg:gap-x-14 md:gap-1 sm:gap-1 sm:col-span-1">
+            <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 md:gap-1 sm:gap-1 sm:col-span-1">
                 <img className="lg:h-1/2 " src={WorkExperienceData[2].image} ></img>
             </div>
             <div className="lg:col-span-3 sm:col-span-1">

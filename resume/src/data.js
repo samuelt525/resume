@@ -306,18 +306,25 @@ export const ProjectData = [
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
     }, 
-    description: "",
-    motive: "",
+    description: `This project is a captivating 2D top-down roguelike game developed in Unity, inspired by the classic gameplay of "The Legend of Zelda." 
+    Players can choose between two distinct classes, Warrior and Archer, each with unique abilities, stats, and playstyles. 
+    The game features meticulously designed custom levels, offering a diverse range of challenges and environments. 
+    The enemy AI is crafted to provide dynamic and challenging encounters, mobs would shoot projectiles, spring onto your most recent location, or follow you around. 
+    The combination of compelling classes, intricate level design, and engaging game mechanics ensures an immersive and enjoyable gameplay experience.`,
+    motive: "CI 101-103 Project",
   },
   {
     title: "Chingu",
     image: null,
-    tech: "React, Firebase, Electron",
+    tech: "React, Electron, Firebase",
     link: {
-      github: 'https://github.com/Halo-nm/CI-Project-GitHub',
-      link: "https://www.youtube.com/watch?v=H948jkMmIRo",
+      github: 'https://github.com/samuelt525/Chingu',
+      link: "",
     }, 
-    description: "",
+    description: `This project is a chatting application developed using React and Electron for front-end services, and Firebase for backend services. 
+    The application supports secure user authentication, real-time messaging, and comprehensive friend management. 
+    The Firebase Authentication ensures secure sign-up and login processes, while the FireBase Database provides instant synchronization of messages and user account information. 
+    The frontend, built with React, delivers a responsive and interactive user interface, and Electron transforms this web application into a cross-platform desktop app compatible with Windows, macOS, and Linux.`,
     motive: "",
   },
   {
@@ -328,7 +335,12 @@ export const ProjectData = [
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
     }, 
-    description: "",
+    description: `Vybify is an application developed with Angular that uses Spotify API to curate personalized playlists directly in your Spotify account based on the inputted songs
+    Using sophisticated Algorithms, Vybify analyzes various musical attributes, including genre, tempo, valence, and key to create playlists that match your preferences and listening habits.
+    The application uses OAuth tokens to securely authenticate users and access their Spotify accounts, ensuring a seamless and secure integration. \
+    Additionally, Vybify utilizes cookies to store user preferences and session information, enhancing the user experience by providing persistent and personalized interactions. 
+    By combining the powerful features of Javascript with the Spotify API, Vybify offers an intuitive user experience, allowing you to discover and enjoy music that aligns perfectly with your vibe. 
+    Whether you're looking for high-energy tracks for a workout or mellow tunes for relaxation, Vybify intelligently compiles the ideal playlist, enhancing your music experience with precision and creativity.`,
     motive: "",
   },
 ];
