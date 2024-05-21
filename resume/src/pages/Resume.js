@@ -25,14 +25,14 @@ export default function Resume() {
                 <span className="absolute inset-x-1 -bottom-1 border-b-2 border-orange-400 w-48" />
             </div>
           </div>
-          <div className="grid grid-cols-5 grid-rows-3 auto-cols-fr auto-rows-fr gap-4">
-            <div className="col-span-2 flex flex-row gap-x-14">
+          <div className="grid grid-cols-5 grid-rows-3 auto-cols-fr auto-rows-fr gap-4 md:grid-cols-1 sm:grid-cols-1">
+            <div className="col-span-2 flex flex-row gap-x-14 md:col-span-1 sm:col-span-1">
                 <img style={{width: "200px", height: "436px"}} src={WorkExperienceData[0].image} ></img>
             </div>
-            <div className="col-span-3 flex flex-row gap-x-14">
+            <div className="col-span-3 flex flex-row gap-x-14 md:col-span-1 sm:col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[0]} />
             </div>
-            <div className="col-span-2 flex flex-row gap-x-14">
+            {/* <div className="col-span-2 flex flex-row gap-x-14">
                 <img style={{width: "50%", height: "50%"}} src={WorkExperienceData[1].image} ></img>
             </div>
             <div className="col-span-3 flex flex-row gap-x-14">
@@ -43,7 +43,7 @@ export default function Resume() {
             </div>
             <div className="col-span-3 flex flex-row gap-x-14">
                 <WorkExperience WorkExperience={WorkExperienceData[2]} />
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <ResumeSection title="Work Experience">
