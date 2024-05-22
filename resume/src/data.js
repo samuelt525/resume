@@ -97,6 +97,18 @@ export const WorkExperienceData = [
     image: wolf,
   },
   {
+    company: "",
+    date: "March 2021 - August 2021",
+    location: "Philadelphia, PA",
+    role: "Quality Assurance Tester (Part-Time)",
+    responsibilities: [
+      "Collaborated closely with my old development team to identify and prioritize issues in beta branches using Jira, ensuring timely resolution of bugs",
+      "Utilized Jest testing framework to develop and execute test cases, including real-time stock data retrieval, user profile features",
+      "Employed mocking and stubbing techniques within Jest to isolate and test individual components, APIs, and external dependencies, enhancing test reliability and efficiency."
+    ],
+    image: null,
+  },
+  {
     company: "National Board of Medical Examiner",
     date: "September 2019 - March 2020",
     location: "Philadelphia, PA",

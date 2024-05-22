@@ -25,27 +25,30 @@ export default function Resume() {
                 <span className="absolute inset-x-1 -bottom-1 border-b-2 border-orange-400 w-48" />
             </div>
           </div>
-          <div className="grid lg:grid-cols-5 lg:lgrid-rows-3  lg:auto-cols-fr lg:auto-rows-fr lg:gap-4 sm:gap-1 md:grid-cols-1 sm:grid-cols-1">
-            <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 sm:gap-1  sm:col-span-1">
-                <img style={{width: "200px", height: "100%"}} src={WorkExperienceData[0].image} ></img>
+
+          <div className="grid lg:grid-cols-5 lg:grid-rows-3 lg:auto-cols-fr lg:auto-rows-fr lg:gap-4 sm:gap-1 grid-cols-1">
+            <div className="lg:col-span-2 flex flex-row justify-center gap-x-14 msm:col-span-1">
+                <img className="lg:w-auto lg:h-1/2 md:w-1/2 md:h-auto" src={WorkExperienceData[0].image} ></img>
             </div>
-            <div className="lg:col-span-3 sm:col-span-1">
+            <div className="lg:col-span-3 col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[0]} />
             </div>
 
+          {/* WOLF */}
             <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 sm:gap-1 sm:col-span-1">
-                <img className="lg:w-1/2 lg:h-1/2 " src={WorkExperienceData[1].image} ></img>
+                <img className="lg:w-1/2 lg:h-1/3 md:w-1/4 md:h-auto" src={WorkExperienceData[1].image} ></img>
             </div>
-            <div className="lg:col-span-3 sm:col-span-1">
+            <div className="lg:col-span-3 col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[1]} />
-            </div>
-
-
-            <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 md:gap-1 sm:gap-1 sm:col-span-1">
-                <img className="lg:h-1/2 " src={WorkExperienceData[2].image} ></img>
-            </div>
-            <div className="lg:col-span-3 sm:col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[2]} />
+            </div>
+
+          {/* NBME */}
+            <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 md:gap-1 sm:gap-1 sm:col-span-1">
+                <img className="lg:w-5/6 lg:h-1/3 md:w-1/2 md:h-auto" src={WorkExperienceData[3].image} ></img>
+            </div>
+            <div className="lg:col-span-3 col-span-1">
+                <WorkExperience WorkExperience={WorkExperienceData[3]} />
             </div>
 
             {/* <div className="col-span-2 flex flex-row gap-x-14">
