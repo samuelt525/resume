@@ -285,7 +285,7 @@ export const ProjectData = [
   {
     title: "Hua by Dorothy Li",
     image: hua, 
-    tech: "Wix",
+    tech: ["Wix"],
     link: {
       github: '',
       link: "https://www.huabydorothy.com/",
@@ -296,7 +296,7 @@ export const ProjectData = [
   {
     title: "Race Walking Motion Tracker",
     image: motionTracker,
-    tech: "Qt, Python, OpenCV",
+    tech: ["Python", "Qt", "OpenCV"],
     link: {
       github: "https://github.com/samuelt525/MotionTracker54",
       link: ''
@@ -307,44 +307,36 @@ export const ProjectData = [
   {
     title: "Project Dungeon",
     image: null,
-    tech: "Unity 3D",
+    tech: ["C#","Unity 2D"],
     link: {
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
     }, 
-    description: `This project is a 2D top-down roguelike game developed in Unity, inspired by the game "The Legend of Zelda and Binding of Isaac." 
-    Players can choose between two classes, Warrior and Archer, each with unique abilities, stats, and playstyles. 
-    The game features custom designed levels, offering a diverse range of challenges and environments. 
-    The enemy AI was created to provide dynamic and challenging encounters, mobs would shoot projectiles, spring onto your most recent location, or follow you around. 
-    The combination of compelling classes, intricate level design, and engaging game mechanics ensures an immersive and enjoyable gameplay experience.`,
+    description: 
+    `This Unity-based 2D roguelike draws inspiration from "The Legend of Zelda" and "Binding of Isaac," offering players the choice between two distinct classes: Warrior and Archer, each with their own abilities and playstyles. Custom-designed levels present diverse challenges and environments, while dynamic enemy AI delivers engaging encounters with mobs that shoot projectiles, spring onto recent locations, or give chase. With its compelling classes, intricate levels, and immersive mechanics, the game promises an enjoyable gameplay experience reminiscent of its inspirations.`,
     motive: "CI 101-103 Project",
   },
   {
     title: "Chingu",
     image: null,
-    tech: "React, Electron, Firebase",
+    tech: ["React", "Electron", "Firebase"],
     link: {
       github: 'https://github.com/samuelt525/Chingu',
       link: "",
     }, 
-    description: `This project is a chatting application developed using React and Electron for front-end services, and Firebase for backend services. 
-    The application supports secure user authentication, real-time messaging, and comprehensive friend management. 
-    The Firebase Authentication ensures secure sign-up and login processes, while the FireBase Database provides instant synchronization of messages and user account information. 
-    The frontend, built with React, delivers a responsive and interactive user interface, and Electron transforms this web application into a cross-platform desktop app compatible with Windows, macOS, and Linux.`,
+    description: `
+    Developed with React and Electron, this chatting application seamlessly integrates Firebase for backend services. It offers secure user authentication, real-time messaging, and robust friend management capabilities. Through Firebase Authentication and Database, users experience secure sign-up/login and instant synchronization of messages, while Electron ensures cross-platform compatibility, transforming the React-built frontend into a responsive desktop app for Windows, macOS, and Linux.`,
     motive: "",
   },
   {
     title: "Vybify",
     image: null,
-    tech: "Angular, SpotifyAPI, Cookies, OAuth Token",
+    tech: ["Angular", "PostgreSQL", "Cookie", "Spotify API"],
     link: {
       github: 'https://github.com/Halo-nm/CI-Project-GitHub',
       link: "https://www.youtube.com/watch?v=H948jkMmIRo",
     }, 
-    description: `Vybify is an application developed with Angular that uses Spotify API to curate personalized playlists directly in your Spotify account based on the inputted song
-    Using sophisticated Algorithms, Vybify analyzes various musical attributes, including genre, tempo, valence, and key to create playlists that match your preferences and listening habits.
-    The application uses OAuth tokens to securely authenticate users and access their Spotify accounts, ensuring a seamless and secure integration.
-    Additionally, Vybify utilizes cookies to store user preferences and session information, enhancing the user experience by providing persistent and personalized interactions. `,
+    description: `Vybify, an Angular-based app, uses the Spotify API to generate personalized playlists tailored to users' musical tastes from a single input song. With OAuth tokens ensuring secure authentication, Vybify seamlessly integrates with Spotify accounts for a hassle-free experience. Enhanced by cookies storing user account, Vybify delivers persistent, personalized interactions for an enriched user journey.`,
     motive: "",
   },
 ];
