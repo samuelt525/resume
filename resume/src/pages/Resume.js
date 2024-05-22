@@ -26,9 +26,10 @@ export default function Resume() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-5 lg:grid-rows-3 lg:auto-cols-fr lg:auto-rows-fr lg:gap-4 sm:gap-1 grid-cols-1">
-            <div className="lg:col-span-2 flex flex-row justify-center gap-x-14 msm:col-span-1">
-                <img className="lg:w-auto lg:h-1/2 md:w-1/2 md:h-auto" src={WorkExperienceData[0].image} ></img>
+          <div className="grid lg:grid-cols-5 lg:auto-cols-fr sm:gap-1 grid-cols-1">
+            {/* SIG */}
+            <div className="lg:col-span-2 flex flex-row justify-center col-span-1">
+                <img className="lg:w-3/4 lg:h-1/2 md:w-1/2 md:h-auto" src={WorkExperienceData[0].image} ></img>
             </div>
             <div className="lg:col-span-3 col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[0]} />
@@ -45,7 +46,7 @@ export default function Resume() {
 
           {/* NBME */}
             <div className="lg:col-span-2 flex flex-row justify-center lg:gap-x-14 md:gap-1 sm:gap-1 sm:col-span-1">
-                <img className="lg:w-5/6 lg:h-1/3 md:w-1/2 md:h-auto" src={WorkExperienceData[3].image} ></img>
+                <img className="lg:w-5/6 lg:h-1/2 md:w-1/2 md:h-auto" src={WorkExperienceData[3].image} ></img>
             </div>
             <div className="lg:col-span-3 col-span-1">
                 <WorkExperience WorkExperience={WorkExperienceData[3]} />

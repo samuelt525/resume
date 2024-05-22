@@ -24,12 +24,12 @@ export default function Contact() {
   return (
     <Section name="contact" className="bg-gray-900 text-gray-200" >
       <h1 className='text-xl font-bold uppercase text-white text-start'>Get in Touch</h1>
-      <div className="grid grid-cols-2 ">
+      <div className="grid grid-cols-2 gap-x-16">
         <div className="flex flex-col cols-span-1">
           <span>
             Have a project for me? Any questions about something I've built? I'd
             love to hear from you, give me a shout by email or by using the form
-            below if you'd like to get in contact with me.
+            below if you'd like to get in contact with me
           </span>
         </div>
         <div className="col-span-1 w-full">
