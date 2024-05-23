@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import { FaTimes, FaBars } from 'react-icons/fa'
+import React from 'react'
 import {Link} from 'react-scroll'
 import './Header.css'
 
