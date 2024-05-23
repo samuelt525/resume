@@ -32,7 +32,7 @@ function Hero() {
                         <Social />
                     </div>
                     <div className="flex flex-row p-4">
-                        {actions.map(({ href, text, primary, Icon }) =>
+                        {actions.map(({ href, text, primary, Icon }, index) =>
                             primary ? (
                                 <a
                                     className={classNames(
@@ -43,7 +43,7 @@ function Hero() {
                                         Icon ? "px-4" : "px-3"
                                     )}
                                     href={href}
-                                    key={text}
+                                    key={index}
                                 >
                                     {text}
                                     {Icon && (

@@ -27,7 +27,7 @@ export default function Testimonials() {
             className=""
             >
           {TestimonialData.map((data, index) => (
-            <SwiperSlide className='p-8'>
+            <SwiperSlide className='p-8' key={`slide${index}`}>
               <Card testimonial={data} key={index}/>
             </SwiperSlide>
           ))}

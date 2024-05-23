@@ -38,7 +38,7 @@ function ProjectCard({ variants, project }) {
                 </motion.h2>
                 <motion.div className="ml-4 mt-4 text-m text-black text-left">
                     {tech.map((tec, index) => (
-                        <span className="rounded-md border border-black py-1 px-2 m-1">
+                        <span key={index} className="rounded-md border border-black py-1 px-2 m-1">
                             {tec}
                         </span>
                     ))}

@@ -214,9 +214,12 @@ export const SocialData = [
     {
         label: "LinkedIn",
         Icon: FaLinkedin,
-        href: "https://www.linkedin.com/in/samuel-tsui-7730001b9/",
+        href: "https://www.linkedin.com/in/samuel-tsui/",
     },
-    { label: "Github", Icon: FaGithub, href: "https://github.com/samuelt525" },
+    { 
+        label: "Github", 
+        Icon: FaGithub, 
+        href: "https://github.com/samuelt525" },
     {
         label: "Instagram",
         Icon: FaInstagram,

@@ -7,6 +7,10 @@ import Education from "./Resume/Education";
 import WorkExperience from "./Resume/WorkExperience";
 
 export default function Resume() {
+  const grid = {
+    hidden: {opacity: 0, y:100},
+    show: { opacity: 1, y:0},
+}
   return (
     <Section name="resume" images={null}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
