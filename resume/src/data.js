@@ -12,6 +12,8 @@ import huaOrder from "./images/huabydorothy/order.png";
 import motionTracker from "./images/racewalker/SalvageLogo.webp";
 import ai from "./images/racewalker/ai.png";
 import ui from "./images/racewalker/ui.png";
+import doro from "./images/testimonials/dorothy.jpg"
+import kevin from "./images/testimonials/kevin.jpg"
 import {
     ArrowDownTrayIcon,
     MapIcon,
@@ -246,7 +248,7 @@ export const TestimonialData = [
     Sam did an incredible job creating a visually stunning site that truly captures the essence of my floral designs. 
     Whenever I need updates or changes, Sam is always there to help, ensuring the site stays fresh and up-to-date with the Season. 
     Beyond being a talented web designer, Sam is a fantastic friend, and his support has been invaluable to the success of my business. Highly recommended!`,
-        image: hero,
+        image: doro,
         person: "Dorothy Li",
         actions: [],
     },
@@ -272,8 +274,8 @@ export const TestimonialData = [
     Our projects consistently excelled, largely due to Sam's effort and his attention to detail. Sam cares about the user experience, ensuring that our interfaces are not only functional, but visually appealing as well. 
     Beyond his strong work ethic, navigating any disagreements regarding our projects was seamless with Sam. 
     He remained openminded to conflicts, facilitating swift resolutions. Working with Sam on programming projects was truly a delight.`,
-        image: hero,
-        person: "Sean Rhee",
+        image: kevin,
+        person: "Kevin Kim",
         actions: [],
     },
 ];
