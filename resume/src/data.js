@@ -10,8 +10,8 @@ import huaGallery from "./images/huabydorothy/gallery.png";
 import huaHome from "./images/huabydorothy/home.png";
 import huaOrder from "./images/huabydorothy/order.png";
 import motionTracker from "./images/racewalker/SalvageLogo.webp";
-import ai from './images/racewalker/ai.png'
-import ui from './images/racewalker/ui.png'
+import ai from "./images/racewalker/ai.png";
+import ui from "./images/racewalker/ui.png";
 import {
     ArrowDownTrayIcon,
     MapIcon,
@@ -281,33 +281,42 @@ export const TestimonialData = [
 export const ProjectData = [
     {
         title: "Hua by Dorothy Li",
-        logo: hua,
         images: [
+            {
+              image:hua,
+              top: 100,
+              bottom: 0,
+              left: 150,
+              right: 0, 
+            },
+            {
+                image: huaHome,
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+            },
             {
                 image: huaContact,
                 top: 0,
                 bottom: 0,
                 left: 0,
-                right: 0
+                right: 0,
             },
             {
                 image: huaGallery,
                 top: 0,
                 bottom: 0,
                 left: 0,
-                right: 0
+                right: 0,
             },
-            { image: huaHome,                 
-              top: 0,
-              bottom: 0,
-              left: 0,
-              right: 0 },
+
             {
                 image: huaOrder,
                 top: 0,
                 bottom: 0,
                 left: 0,
-                right: 0
+                right: 0,
             },
         ],
         tech: ["Wix", "Live Service"],
@@ -328,27 +337,27 @@ export const ProjectData = [
             link: "",
         },
         images: [
-          {
-              image: motionTracker,
-              top: 75,
-              bottom: 0,
-              left: 225,
-              right: 0
-          },
-          {
-            image: ui,
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0
-        },
-        {
-          image: ai,
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0
-      }
+            {
+                image: motionTracker,
+                top: 75,
+                bottom: 0,
+                left: 225,
+                right: 0,
+            },
+            {
+                image: ui,
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+            },
+            {
+                image: ai,
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+            },
         ],
         description:
             "Developed a GUI Application using OpenCV AI algorithms to intelligently detect race walkers in race walking footage to trim out hour long races into parts with content. ",

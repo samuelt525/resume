@@ -25,7 +25,7 @@ function ProjectExperience() {
     <Section
       name="project experience"
       noPadding={true}
-      className="p-8 bg-gradient-to-r from-[#2c5364] to-[#203a43]"
+      className="p-24 bg-gradient-to-r from-[#2c5364] to-[#203a43]"
     >
       <div className="flex justify-center md:justify-start">
         <div className="relative mx-4 h-max">
