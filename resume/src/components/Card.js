@@ -18,7 +18,7 @@ function Card({testimonial}) {
           <h2 className="text-xl justify-center"> • </h2>
           <h2 className="flex text-m italic leading-7 justify-center"> {role} </h2>
         </div>
-        <div className="flex">
+        <div className="flex text-left">
           {description}
         </div>
 

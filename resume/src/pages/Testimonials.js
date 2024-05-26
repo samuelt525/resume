@@ -11,7 +11,8 @@ import { TestimonialData } from '../data'
 
 export default function Testimonials() {
   return (
-    <Section name='testimonials' className="">
+    <Section name='testimonials' className="">  
+    <h2 className="text-2xl font-bold text-black text-left">Testimonials</h2>
         <div>
             <Swiper
             pagination={{

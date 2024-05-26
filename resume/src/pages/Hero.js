@@ -11,10 +11,10 @@ function Hero() {
     return (
         <Section sectionId="hero" noPadding={true}>
             <div className="relative flex h-screen w-full items-center justify-center flex-row">
-                <img
+                {/* <img
                     src={background}
                     className="absolute z-0 h-full w-full object-cover"
-                />
+                /> */}
                 <div className="relative z-10 flex flex-col items-center shadow-2xl rounded-md p-8">
                     <h1 className="text-4xl font-bold text-gray-950 sm:text-5xl lg:text-7xl">
                         I'm Samuel Tsui
@@ -36,7 +36,7 @@ function Hero() {
                             primary ? (
                                 <a
                                     className={classNames(
-                                        "flex justify-center m-1 gap-x-2 py-2 rounded-full border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
+                                        "flex justify-center m-1 gap-x-2 py-2 rounded-md border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
                                         primary
                                             ? "border-orange-500 ring-orange-500"
                                             : "border-white ring-white",
@@ -57,10 +57,10 @@ function Hero() {
                                     spy={true}
                                     smooth={true}
                                     className={classNames(
-                                        "flex justify-center m-1 gap-x-2 py-2 rounded-full border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
+                                        "flex justify-center m-1 gap-x-2 py-2 rounded-md border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
                                         primary
                                             ? "border-orange-500 ring-orange-500"
-                                            : "border-white ring-white",
+                                            : "border-gray-400 ring-gray-400",
                                         Icon ? "px-4" : "px-3"
                                     )}
                                 >

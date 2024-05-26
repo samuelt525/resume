@@ -6,6 +6,9 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Testimonials from './pages/Testimonials';
 import ProjectExperience from './pages/ProjectExperience';
+import { CiMail } from "react-icons/ci";
+import { Link } from 'react-scroll';
+
 
 function App() {
   return (
@@ -17,10 +20,11 @@ function App() {
       <ProjectExperience/>
       <Testimonials />
       <Contact/>
+      <Link to="contact" smooth={true} className="fixed bottom-[10%] right-[10%] border border-gray-400 bg-white rounded-full py-4 px-4 items center hover:bg-blue-300 transition duration-300">
+        <CiMail size="32"></CiMail>
+      </Link>
     </div>
-  );
-
-  
+  ); 
 }
 
 export default App; 

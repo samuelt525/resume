@@ -27,8 +27,8 @@ function Skill({skill}){
                 {flag ?? <span> {flag} </span>}
                 <span className="text-sm font-medium m-1 ">{name}</span> {/* Skill name */}
             </div>
-            <div className="h-5 w-full overflow-hidden rounded-full bg-neutral-300"> {/* Added margin-top */}
-                <div className="h-full rounded-full bg-orange-400" style={{ width: `${percentage}%` }} />
+            <div className="h-3 w-full overflow-hidden rounded-md bg-neutral-300"> {/* Added margin-top */}
+                <div className="h-full rounded-md bg-orange-400" style={{ width: `${percentage}%` }} />
             </div>
 
         </div>

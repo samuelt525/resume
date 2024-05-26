@@ -230,16 +230,17 @@ export const aboutData = {
     profileImageSrc: hero,
     description: ``,
     aboutItems: [
+        { label: "Study", text: "Drexel University", Icon: AcademicCapIcon },
+        { label: "Employment", text: "NA", Icon: BuildingOffice2Icon },
         { label: "Location", text: "Philadelphia, PA", Icon: MapIcon },
-        { label: "Age", text: "24", Icon: CalendarIcon },
-        { label: "Nationality", text: "Taiwanese / Korean", Icon: FlagIcon },
+        /*{ label: "Nationality", text: "Taiwanese / Korean", Icon: FlagIcon },
+        { label: "Age", text: "24", Icon: CalendarIcon },*/
         {
             label: "Interests",
             text: "Swimming, Rock Climbing, Gaming",
             Icon: SparklesIcon,
         },
-        { label: "Study", text: "Drexel University", Icon: AcademicCapIcon },
-        { label: "Employment", text: "NA", Icon: BuildingOffice2Icon },
+
     ],
 };
 
@@ -286,6 +287,7 @@ export const TestimonialData = [
 export const ProjectData = [
     {
         title: "Hua by Dorothy Li",
+        logo: hua,
         images: [
             {
               image:hua,
@@ -326,7 +328,7 @@ export const ProjectData = [
         ],
         tech: ["Wix", "Live Service"],
         link: {
-            github: "",
+            github: null,
             link: "https://www.huabydorothy.com/",
         },
         description:
@@ -339,7 +341,7 @@ export const ProjectData = [
         tech: ["Python", "Qt", "OpenCV"],
         link: {
             github: "https://github.com/samuelt525/MotionTracker54",
-            link: "",
+            link: null,
         },
         images: [
             {
@@ -385,7 +387,7 @@ export const ProjectData = [
         tech: ["React", "Electron", "Firebase"],
         link: {
             github: "https://github.com/samuelt525/Chingu",
-            link: "",
+            link: null,
         },
         description: `
     Developed with React and Electron, this chatting application seamlessly integrates Firebase for backend services. It offers secure user authentication, real-time messaging, and robust friend management capabilities. Through Firebase Authentication and Database, users experience secure sign-up/login and instant synchronization of messages, while Electron ensures cross-platform compatibility, transforming the React-built frontend into a responsive desktop app for Windows, macOS, and Linux.`,
