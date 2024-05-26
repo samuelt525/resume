@@ -290,13 +290,6 @@ export const ProjectData = [
         logo: hua,
         images: [
             {
-              image:hua,
-              top: 100,
-              bottom: 0,
-              left: 150,
-              right: 0, 
-            },
-            {
                 image: huaHome,
                 top: 0,
                 bottom: 0,
