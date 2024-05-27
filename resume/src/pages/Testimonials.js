@@ -2,7 +2,7 @@ import React from 'react'
 import Section from '../layouts/Section'
 import {Swiper, SwiperSlide} from "swiper/react"
 import {Mousewheel, EffectCoverflow, Pagination} from 'swiper/modules'
-import Card from '../components/Card'
+import TestimonialCard from '../components/TestimonialCard'
 import 'swiper/css'
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
@@ -29,7 +29,7 @@ export default function Testimonials() {
             >
           {TestimonialData.map((data, index) => (
             <SwiperSlide className='p-8' key={`slide${index}`}>
-              <Card testimonial={data} key={index}/>
+              <TestimonialCard testimonial={data} key={index}/>
             </SwiperSlide>
           ))}
 

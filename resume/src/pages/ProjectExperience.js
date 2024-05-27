@@ -16,12 +16,12 @@ function ProjectExperience() {
         <div className="grid grid-cols-1"> 
           {ProjectData.map((project,index) => {
               return (  
-                  <a className="grid-cols-1 m-2 border rounded-lg p-[6%] h-full
-                  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300" >
-                  {/* href={project.link.link ?? project.link.github} > */}
+                  <a className="flex flex-col m-2 border rounded-lg p-4 h-full
+                  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300" 
+                  href={project.link.link ?? project.link.github}>
                     <h3 className="pt-3 text-2xl font-semibold ">{project?.title}</h3>
                     <div className="flex text-left items-center flex-wrap p-4 relative"> {project?.description} </div>
-                    <div className="flex flex-wrap pt-4 ">
+                    <div className="flex flex-wrap pt-4 ml-4 ">
                       {project?.tech.map((tec) => {
                         return (
                           <div className="border rounded-md px-2 text-base font-semibold"> 
@@ -34,7 +34,7 @@ function ProjectExperience() {
                       <Swiper navigation={true} modules={[Navigation]} spaceBetween={30} slidesPerView={1}>
                               {project.images?.map((image, index) => (  
                                   <SwiperSlide key={index} >
-                                    <img src={image.image} className="center aspect-square max-w-full max-h-[400px] w-full h-auto object-contain"/>
+                                    <img src={image.image} className="center aspect-square max-h-[250px] w-full h-full object-contain"/>
                                   </SwiperSlide>
                           ))}
                       </Swiper>
@@ -58,33 +58,6 @@ function ProjectExperience() {
         </div>
 
     </Section>
-
-    // <Section
-    //   name="project experience"
-    //   noPadding={true}
-    //   className="p-24 bg-gradient-to-r from-[#2c5364] to-[#203a43]"
-    // >
-    //   <div className="flex justify-center md:justify-start">
-    //     <div className="relative mx-4 h-max">
-    //       <h2 className="text-xl font-bold uppercase text-gray-950">
-    //         Project Experience
-    //       </h2>
-    //       <span className="absolute inset-x-0 -bottom-1 border-b-2 border-orange-400" />
-    //     </div>
-    //   </div>
-    //   <motion.div className="flex flex-col gap-10 overflow-x-hidden">
-    //     <motion.section
-    //       variants={gridContainerVariants}
-    //       initial="hidden"
-    //       whileInView="show"
-    //       className="grid p-4 gap-8 grid-cols-1 lg:grid-cols-2 justify-center items-center overflow-hidden relative"
-    //     >
-    //       {ProjectData.map((project,index) => 
-    //         <ProjectCard key={index} variants={gridSquareVariants} project={project}></ProjectCard>
-    //       )}
-    //     </motion.section>
-    //   </motion.div>
-    // </Section>
   );
 }
 

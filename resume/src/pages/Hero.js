@@ -5,16 +5,16 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Section from "../layouts/Section";
 import Social from "../components/Social";
 import { Link } from "react-scroll";
-import background from "../images/924472.webp";
+import background from "../images/background.webp";
 function Hero() {
     const { actions } = HeroData;
     return (
         <Section sectionId="hero" noPadding={true}>
             <div className="relative flex h-screen w-full items-center justify-center flex-row">
-                {/* <img
+                <img
                     src={background}
                     className="absolute z-0 h-full w-full object-cover"
-                /> */}
+                />
                 <div className="relative z-10 flex flex-col items-center shadow-2xl rounded-md p-8">
                     <h1 className="text-4xl font-bold text-gray-950 sm:text-5xl lg:text-7xl">
                         I'm Samuel Tsui
@@ -24,7 +24,7 @@ function Hero() {
                             <p>
                                 Hello, Thanks for clicking onto my newly created
                                 site 5/15.
-                                Last Updated: 5/22
+                                Last Updated: 5/26
                             </p>
                         </div>
                     </p>
@@ -32,41 +32,11 @@ function Hero() {
                         <Social />
                     </div>
                     <div className="flex flex-row p-4">
-                        {actions.map(({ href, text, primary, Icon }, index) =>
-                            primary ? (
-                                <a
-                                    className={classNames(
-                                        "flex justify-center m-1 gap-x-2 py-2 rounded-md border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
-                                        primary
-                                            ? "border-orange-500 ring-orange-500"
-                                            : "border-white ring-white",
-                                        Icon ? "px-4" : "px-3"
-                                    )}
-                                    href={href}
-                                    key={index}
-                                >
+                        {actions.map(({ href, text,  }, index) =>
+                                <a className="px-4 py-2 font-semiboldtextsm mx-2 rounded-md shadow-sm text-white
+                                transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" href={href} key={index}>
                                     {text}
-                                    {Icon && (
-                                        <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />
-                                    )}
                                 </a>
-                            ) : (
-                                <Link
-                                    to={href}
-                                    offset={-50}
-                                    spy={true}
-                                    smooth={true}
-                                    className={classNames(
-                                        "flex justify-center m-1 gap-x-2 py-2 rounded-md border-2 bg-none text-sm font-medium text-g ring-offset-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
-                                        primary
-                                            ? "border-orange-500 ring-orange-500"
-                                            : "border-gray-400 ring-gray-400",
-                                        Icon ? "px-4" : "px-3"
-                                    )}
-                                >
-                                    {text}
-                                </Link>
-                            )
                         )}
                     </div>
                 </div>

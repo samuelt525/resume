@@ -1,8 +1,7 @@
 import React from 'react'
 import { FaQuoteLeft } from 'react-icons/fa'
-import { TestimonialData } from '../data'
 
-function Card({testimonial}) {
+function TestimonialCard({testimonial}) {
   const {role, image, person, description } = testimonial
   return (
     <div className="flex flex-row">
@@ -13,12 +12,12 @@ function Card({testimonial}) {
         </div>
       </div>
       <div className="flex flex-col px-10">
-        <div className="flex flex-row mx-10 gap-x-1">
-          <h2 className="flex text-xl font-bold justify-center"> {person} </h2>
+        <div className="flex flex-row gap-x-1">
+          <h2 className="flex text-xl font-bold "> {person} </h2>
           <h2 className="text-xl justify-center"> • </h2>
           <h2 className="flex text-m italic leading-7 justify-center"> {role} </h2>
         </div>
-        <div className="flex text-left">
+        <div className="flex text-left ml-4">
           {description}
         </div>
 
@@ -30,4 +29,4 @@ function Card({testimonial}) {
   )
 }
 
-export default Card
+export default TestimonialCard

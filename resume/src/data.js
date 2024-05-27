@@ -14,6 +14,7 @@ import ai from "./images/racewalker/ai.png";
 import ui from "./images/racewalker/ui.png";
 import doro from "./images/testimonials/dorothy.jpg"
 import kevin from "./images/testimonials/kevin.jpg"
+import michael from "./images/testimonials/michael.jpg"
 import {
     ArrowDownTrayIcon,
     MapIcon,
@@ -259,8 +260,10 @@ export const TestimonialData = [
     {
         role: "Manager",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
-        image: hero,
+            `I had the pleasure of working with Sam during his frontend development internship. Throughout his time on our team, Sam demonstrated a genuine eagerness to learn and a readiness to tackle new challenges head-on.
+            When faced with complex coding problems, Sam was proactive in seeking out solutions. He thoroughly researched documentation and relevant examples to work through difficult issues independently. At the same time, Sam recognized the value of collaboration and wasn't hesitant to ask for guidance or feedback when he needed further clarification. 
+            It was a pleasure working with Sam during his time as a frontend development intern. His commitment to learning and taking on new challenges served him well. I believe Sam has a solid foundation to build upon as he progresses in his career as a frontend developer.`,
+        image: michael,
         person: "Michael Kassabov",
         actions: [],
     },
@@ -289,6 +292,9 @@ export const ProjectData = [
         title: "Hua by Dorothy Li",
         logo: hua,
         images: [
+            {
+                image:hua,
+            },
             {
                 image: huaHome,
                 top: 0,
