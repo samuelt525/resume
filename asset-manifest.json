@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.6d8b30b7.css",
-    "main.js": "/resume/static/js/main.260e37ac.js",
+    "main.css": "/resume/static/css/main.2b0df20a.css",
+    "main.js": "/resume/static/js/main.8b37cbec.js",
     "static/js/453.f19e9853.chunk.js": "/resume/static/js/453.f19e9853.chunk.js",
-    "static/media/924472.webp": "/resume/static/media/924472.10f61c55933f78b53d5b.webp",
     "static/media/gallery.png": "/resume/static/media/gallery.1cc3492c13201927627e.png",
     "static/media/hero.PNG": "/resume/static/media/hero.50d1a0a0325ce88157ea.PNG",
     "static/media/ui.png": "/resume/static/media/ui.d6c058d4ec44dad32683.png",
@@ -12,19 +11,21 @@
     "static/media/ai.png": "/resume/static/media/ai.7d0c1fdc8cc6d9a6b33b.png",
     "static/media/contact.png": "/resume/static/media/contact.8bff284f27f09ebb1c3a.png",
     "static/media/home.png": "/resume/static/media/home.29315cb1a0d8868a7009.png",
-    "static/media/dorothy.jpg": "/resume/static/media/dorothy.80860314d18fa1ad7280.jpg",
+    "static/media/dorothy.jpg": "/resume/static/media/dorothy.b11185ebd34c1dd72ab8.jpg",
+    "static/media/background.webp": "/resume/static/media/background.38eab6d358fdaed322df.webp",
+    "static/media/michael.jpg": "/resume/static/media/michael.a5e56084ff495fe35149.jpg",
     "static/media/resume.pdf": "/resume/static/media/resume.61c85be2292b4c7d1ff3.pdf",
     "static/media/wolf.png": "/resume/static/media/wolf.c43e80d2906dbbd6592e.png",
     "static/media/SalvageLogo.webp": "/resume/static/media/SalvageLogo.16ee7af37b6103c1c9e4.webp",
     "static/media/nbme.png": "/resume/static/media/nbme.058b7587ed942baf42b8.png",
     "static/media/sig.svg": "/resume/static/media/sig.eba08e391fb880b9c08d9377c57c8a32.svg",
     "index.html": "/resume/index.html",
-    "main.6d8b30b7.css.map": "/resume/static/css/main.6d8b30b7.css.map",
-    "main.260e37ac.js.map": "/resume/static/js/main.260e37ac.js.map",
+    "main.2b0df20a.css.map": "/resume/static/css/main.2b0df20a.css.map",
+    "main.8b37cbec.js.map": "/resume/static/js/main.8b37cbec.js.map",
     "453.f19e9853.chunk.js.map": "/resume/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d8b30b7.css",
-    "static/js/main.260e37ac.js"
+    "static/css/main.2b0df20a.css",
+    "static/js/main.8b37cbec.js"
   ]
 }
