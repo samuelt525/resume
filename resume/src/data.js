@@ -126,7 +126,7 @@ export const WorkExperienceData = [
 
 export const SkillsData = [
     {
-        name: "Programming lanugages",
+        name: "Programming Languages",
         skills: [
             {
                 name: "JavaScript",

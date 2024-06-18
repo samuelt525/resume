@@ -17,24 +17,20 @@ function Hero() {
                 />
                 <div className="relative z-10 flex flex-col items-center shadow-2xl rounded-md p-8">
                     <h1 className="text-4xl font-bold text-gray-950 sm:text-5xl lg:text-7xl">
-                        I'm Samuel Tsui
+                        Hello, I'm Samuel Tsui
                     </h1>
                     <p>
                         <div className="flex flex-col justify-center items-center text-gray-950 text-xl">
                             <p>
-                                Hello, Thanks for clicking onto my newly created
-                                site 5/15.
-                                Last Updated: 5/26
+                                A Front End Developer & Software Engineer. Previously worked at Susquehanna International Group, and National Board of Medical Examiners,  
                             </p>
                         </div>
                     </p>
-                    <div className="flex flex-row m-2 gap-4">
-                        <Social />
-                    </div>
+
                     <div className="flex flex-row p-4">
                         {actions.map(({ href, text,  }, index) =>
-                                <a className="px-4 py-2 font-semiboldtextsm mx-2 rounded-md shadow-sm text-white
-                                transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" href={href} key={index}>
+                                <a className="px-4 py-2 font-semibold text-sm mx-2 rounded-md shadow-sm text-white
+                                transition ease-in-out delay-150 bg-blue-700 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" href={href} key={index}>
                                     {text}
                                 </a>
                         )}

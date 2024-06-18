@@ -72,8 +72,8 @@ export default function Contact() {
             </div>
             <div className="flex justify-start my-4 ">
               <input type="submit" value="Send Email" 
-              className="px-4 py-2 font-semiboldtextsm mx-2 rounded-md shadow-sm text-white
-              transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"/>
+              className="px-4 py-2 font-semiboldtextsm rounded-md shadow-sm text-white
+              transition ease-in-out delay-150 bg-blue-700 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"/>
             </div>
           </form>
         </div>
