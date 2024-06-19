@@ -16,15 +16,15 @@ function ProjectExperience() {
       entries.forEach(entry => {
         if (entry.isIntersecting){
           entry.target.classList.add('opacity-100', 'translate-y-0')
-          entry.target.classList.remove('opacity-0', 'translate-y-10')
+          entry.target.classList.remove('opacity-0', 'translate-y-8')
         }
         else {
-          entry.target.classList.add('opacity-0', 'translate-y-10');
+          entry.target.classList.add('opacity-0', 'translate-y-8');
           entry.target.classList.remove('opacity-100', 'translate-y-0');
       }
       })
     },
-    {threshold: 0.3})
+    {threshold: 0.6})
     
     itemRefs.current.forEach(ref => {
       if (ref.current) observer.observe(ref.current)
@@ -38,11 +38,11 @@ function ProjectExperience() {
   return (
     <Section name="project experience">
         <h2 className="text-xl font-bold uppercase text-gray-950 text-left"> Project Experience </h2>
-        <div className="grid grid-cols-1"> 
+        <div className="grid grid-cols-2"> 
           {ProjectData.map((project,index) => {
               return (  
                   <div className="flex flex-col m-2 p-4 h-full border-b file:border-b-gray-500
-                  transition-all duration-700 ease-in opacity-0 translate-y-10"
+                  transition-all duration-800 ease-in opacity-0 translate-y-8"
                   key={index} ref={itemRefs.current[index]}>
                     <div className="flex ml-4">                    
                        <img src={project.logo}className="max-h-24"/>

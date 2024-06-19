@@ -28,12 +28,26 @@ function Hero() {
                     </p>
 
                     <div className="flex flex-row p-4">
-                        {actions.map(({ href, text,  }, index) =>
-                                <a className="px-4 py-2 font-semibold text-sm mx-2 rounded-md shadow-sm text-white
-                                transition ease-in-out delay-150 bg-blue-700 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" href={href} key={index}>
-                                    {text}
+                    <a className="px-4 py-2 font-semibold text-sm mx-2 rounded-md shadow-sm text-white
+                                transition ease-in-out delay-150 bg-blue-700 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" href={actions[0].href} >
+                                    {actions[0].text}
                                 </a>
-                        )}
+                                <Link className="px-4 py-2 font-semibold text-sm mx-2 rounded-md shadow-sm text-white
+                                transition ease-in-out delay-150 bg-blue-700 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" to={actions[1].href}
+                                offset={-50}
+                                smooth={true}
+                                duration={500}>
+                                    {actions[1].text}
+                                </Link>
+                                <Link className="px-4 py-2 font-semibold text-sm mx-2 rounded-md shadow-sm text-white
+                                
+                                transition ease-in-out delay-150 bg-blue-700 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300" 
+                                offset={-50}
+                                smooth={true}
+                                duration={500}
+                                to={actions[2].href} >
+                                    {actions[2].text}
+                                </Link>
                     </div>
                 </div>
                 <div className="absolute inset-x-0 bottom-6 flex justify-center">

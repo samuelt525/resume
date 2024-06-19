@@ -10,11 +10,13 @@ import huaGallery from "./images/huabydorothy/gallery.png";
 import huaHome from "./images/huabydorothy/home.png";
 import huaOrder from "./images/huabydorothy/order.png";
 import motionTracker from "./images/racewalker/SalvageLogo.webp";
+import ProjectDungeon from "./images/ProjectDungeon/hero-walk-front-2.png"
 import ai from "./images/racewalker/ai.png";
 import ui from "./images/racewalker/ui.png";
 import doro from "./images/testimonials/dorothy.jpg"
 import kevin from "./images/testimonials/kevin.jpg"
 import michael from "./images/testimonials/michael.jpg"
+
 import {
     ArrowDownTrayIcon,
     MapIcon,
@@ -217,10 +219,11 @@ export const SocialData = [
         Icon: FaLinkedin,
         href: "https://www.linkedin.com/in/samuel-tsui/",
     },
-    { 
-        label: "Github", 
-        Icon: FaGithub, 
-        href: "https://github.com/samuelt525" },
+    {
+        label: "Github",
+        Icon: FaGithub,
+        href: "https://github.com/samuelt525"
+    },
     {
         label: "Instagram",
         Icon: FaInstagram,
@@ -268,14 +271,6 @@ export const TestimonialData = [
         actions: [],
     },
     {
-        role: "Manager",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tempor lobortis. Curabitur egestas, dolor vitae ultricies auctor, massa nisi tristique quam, quis fringilla diam eros rutrum leo. Sed faucibus lacus sit amet augue egestas lacinia. Integer finibus purus ac bibendum ultrices. Vivamus ante sem, dignissim sit amet dignissim vitae, elementum vitae lacus. Nam tincidunt pulvinar elit. Nam ac urna viverra, tempus est a, cursus tellus. Donec vitae sapien tincidunt, lobortis tortor sed, porttitor mauris. Vivamus in tellus maximus, dapibus sapien quis, convallis erat. Suspendisse non imperdiet nulla. ",
-        image: hero,
-        person: "Asher Kohn",
-        actions: [],
-    },
-    {
         role: "Classmate",
         description: `Throughout our time at university, I was constantly impressed with Sam's work ethic. 
     Our projects consistently excelled, largely due to Sam's effort and his attention to detail. Sam cares about the user experience, ensuring that our interfaces are not only functional, but visually appealing as well. 
@@ -293,7 +288,7 @@ export const ProjectData = [
         logo: hua,
         images: [
             {
-                image:hua,
+                image: hua,
             },
             {
                 image: huaHome,
@@ -345,39 +340,27 @@ export const ProjectData = [
         images: [
             {
                 image: motionTracker,
-                top: 75,
-                bottom: 0,
-                left: 225,
-                right: 0,
             },
             {
                 image: ui,
-                top: 0,
-                bottom: 0,
-                left: 0,
-                right: 0,
             },
             {
                 image: ai,
-                top: 0,
-                bottom: 0,
-                left: 0,
-                right: 0,
             },
         ],
         description:
-            "Developed a GUI Application using OpenCV AI algorithms to intelligently detect race walkers in race walking footage to trim out hour long races into parts with content. ",
+            "Developed a GUI Application using OpenCV AI algorithms to intelligently detect race walkers in race walking footage to trim out hour long races into parts with content. Used in races to see if contestants are cheating ",
         motive: "Senior Project",
     },
     {
         title: "Project Dungeon",
-        logo: null,
+        logo: ProjectDungeon,
         tech: ["C#", "Unity 2D"],
         link: {
             github: "https://github.com/Halo-nm/CI-Project-GitHub",
             link: "https://www.youtube.com/watch?v=H948jkMmIRo",
         },
-        description: `This Unity-based 2D roguelike draws inspiration from "The Legend of Zelda" and "Binding of Isaac," offering players the choice between two distinct classes: Warrior and Archer, each with their own abilities and playstyles. Custom-designed levels present diverse challenges and environments, while dynamic enemy AI delivers engaging encounters with mobs that shoot projectiles, spring onto recent locations, or give chase. With its compelling classes, intricate levels, and immersive mechanics, the game promises an enjoyable gameplay experience reminiscent of its inspirations.`,
+        description: `This Unity-based 2D roguelike that draws inspiration from "The Legend of Zelda" and "Binding of Isaac," offering players the choice between two distinct classes: Warrior and Archer, each with their own abilities and playstyles. Custom-designed levels present diverse challenges and environments, while dynamic enemy AI delivers engaging encounters with mobs that shoot projectiles, spring onto recent locations, or give chase.`,
         motive: "CI 101-103 Project",
     },
     {
@@ -389,7 +372,7 @@ export const ProjectData = [
             link: null,
         },
         description: `
-    Developed with React and Electron, this chatting application seamlessly integrates Firebase for backend services. It offers secure user authentication, real-time messaging, and robust friend management capabilities. Through Firebase Authentication and Database, users experience secure sign-up/login and instant synchronization of messages, while Electron ensures cross-platform compatibility, transforming the React-built frontend into a responsive desktop app for Windows, macOS, and Linux.`,
+    Developed with React and Electron, this chatting application integrates Firebase for backend services. Using Firebase's Authentication and Database, the application provides secure user sign-up and login, a real-time synchronization of messages, and friends management system. Electron ensures cross-platform compatibility, allowing the React-built frontend to run as a responsive desktop app on Windows, macOS, and Linux.`,
         motive: "",
     },
     {
